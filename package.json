@@ -1,0 +1,21 @@
+{
+  "name": "dci",
+  "author": "lance",
+  "email": "lsmith@catalystsecure.com",
+  "url": "",
+  "description": "sample node.js app to demo ci poc for docker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.shuttercorp.net/dev-value/docker-ci"
+  },
+  "dependencies": {
+    "http": "0.0.0",
+    "mocha": "~1.21.5",
+    "assert": "~1.1.2",
+    "request": "~2.45.0"
+  },
+  "scripts": {
+    "start": "nodejs start.js",
+    "test": "mocha"
+  }
+}
