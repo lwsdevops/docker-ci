@@ -7,7 +7,8 @@ exports.server = http.createServer( function(req, res) {
         res.write('Success!');
         res.end();
     } else {
-        res.writeHead( 405, { 'Content-Type' : 'text/plain' });
+//        res.writeHead( 405, { 'Content-Type' : 'text/plain' });
+        res.writeHead( 200, { 'Content-Type' : 'text/plain' });
         res.write('Fail!');
         res.end('Method Not Allowed');
     }
