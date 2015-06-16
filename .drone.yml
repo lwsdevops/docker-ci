@@ -2,3 +2,8 @@ image: node
 
 script:
   - bash -x ./.drone/build.sh
+  when:
+    branch: feature*
+
+services:
+  - elasticsearch
