@@ -4,4 +4,4 @@ script:
   - bash -x ./.drone/build.sh
 services:
   - mysql
-  - elasticsearch 
+  - tutum/elasticsearch
