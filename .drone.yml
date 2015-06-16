@@ -4,3 +4,13 @@ script:
   - bash -x ./.drone/build.sh
 services:
   - tutum/elasticsearch
+
+publish:
+  github:
+    tag: $DRONE_COMMIT
+    token: 00275314073f16dc7041d397dcb3f33e7790f6a5
+    artifacts: [ 'server.js', 'start.js', 'package.json' ]
+    user: lwsdevops
+    repo: docker-ci
+    when:
+      branch: master
