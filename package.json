@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "nodejs start.js",
-    "test": "mocha -g 'should*'",
+    "test": "mocha",
     "integration": "mocha -g 'integration*'"
   }
 }
