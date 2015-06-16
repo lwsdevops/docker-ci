@@ -1,6 +1,7 @@
 image: node:latest
 
 script:
+  - apt-get install sudo
   - bash -x ./.drone/build.sh
 services:
   - tutum/elasticsearch
