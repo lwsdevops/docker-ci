@@ -2,8 +2,4 @@ image: node:latest
 
 script:
   - bash -x ./.drone/build.sh
-  when:
-    branch: feature*
 
-services:
-  - elasticsearch
