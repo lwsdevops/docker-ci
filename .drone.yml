@@ -1,5 +1,6 @@
 image: node:latest
-
+git:
+  path: github.com/lwsdevops/docker-ci
 script:
   - bash -x ./.drone/build.sh
 services:
