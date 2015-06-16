@@ -1,0 +1,4 @@
+image: node
+
+script:
+  - bash -x ./.drone/build.sh
