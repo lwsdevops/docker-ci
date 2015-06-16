@@ -1,12 +1,12 @@
 {
   "name": "dci",
   "author": "lance",
-  "email": "lsmith@catalystsecure.com",
+  "email": "smith.w.lance@gmail.com",
   "url": "",
   "description": "sample node.js app to demo ci poc for docker",
   "repository": {
     "type": "git",
-    "url": "https://github.shuttercorp.net/dev-value/docker-ci"
+    "url": "https://github.com/lws-devops/docker-ci"
   },
   "dependencies": {
     "http": "0.0.0",
