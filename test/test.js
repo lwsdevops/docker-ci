@@ -22,12 +22,13 @@ describe('server', function() {
         });
     });
 
-    describe('/es-healthcheck' function() {
+    describe('/es-healthcheck', function() {
       it('integration es-healthcheck', function(done) {
         request({ uri: 'http://localhost:8080/es-healthcheck', method: 'GET' }, function( error, res, body ) {
             assert.equal(200, res.statusCode);
             done();
         });
+      });
     });
 
     after( function() {
