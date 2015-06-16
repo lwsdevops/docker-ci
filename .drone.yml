@@ -3,4 +3,4 @@ image: node:latest
 script:
   - bash -x ./.drone/build.sh
 services:
-  - elasticsearch:latest
+  - elasticsearch:0.90
