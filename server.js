@@ -1,9 +1,13 @@
 var   http = require('http')
     , os = require('os')
+    , reuqest = require('request')
+    , url = require('url');
 
 exports.server = http.createServer( function(req, res) {
     console.log(req.headers);
-    if( req.method == "GET" ) {
+    var uri = url.parse(req.url).pathname
+
+    if( req.method == "GET" && uri == "/" ) {
         res.writeHead(200, { 'Content-Type' : 'text/plain' });
         res.write('hostname:' + os.hostname() + '\n');
         res.end();
